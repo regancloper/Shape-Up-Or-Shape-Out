@@ -76,7 +76,7 @@ class Triangle extends Shape {
         return 0.5 * this.height * this.height;
     }
     get perimeter() {
-        return 2 * (this.height + Math.sqrt(2)) * this.height;
+        return 2 * this.height + (this.height * Math.sqrt(2));
     }
     get radius() { return "N/A" };
 }
