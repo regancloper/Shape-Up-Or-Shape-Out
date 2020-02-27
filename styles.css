@@ -1,0 +1,45 @@
+.circle {
+    position: absolute;
+    background-color: purple;
+    border-radius: 50%;
+}
+
+.square {
+    position: absolute;
+    background-color: red;
+}
+
+.rectangle {
+    position: absolute;
+    background-color: green;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom-style: solid;
+    border-bottom-color: yellow;
+    border-right-style: solid;
+    border-right-color: transparent;
+  }
+
+.shape-box {
+    height: 602px; 
+    width: 602px;
+    background-color: lightcyan;
+    border: 1px solid black;
+}
+
+.sidepanel {
+    border: 1px solid black;
+}
+
+#shape-calc, #height-calc, #width-calc, #area-calc, 
+#perimeter-calc, #radius-calc {
+    background-color: white;
+}
+
+.detail {
+    width: 35%;
+}

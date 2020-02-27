@@ -6,12 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shape Up Or Shape Out</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
 
-    
+    <div class="container mt-2">
+        <h2>Add a Shape!</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button" id="circle-btn">Add Circle</button>
+                    </div>
+                    <input type="text" class="form-control" id="circle-input" placeholder="Radius in pixels">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button" id="square-btn">Add Square</button>
+                    </div>
+                    <input type="text" class="form-control" id="square-input" placeholder="Side length in pixels">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button" id="rect-btn">Add Rectangle</button>
+                    </div>
+                    <input type="text" class="form-control" id="rect-height-input" placeholder="Height in pixels">
+                    <input type="text" class="form-control" id="rect-width-input" placeholder="Width in pixels">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button" id="triangle-btn">Add Triangle</button>
+                    </div>
+                    <input type="text" class="form-control" id="triangle-input" placeholder="Height in pixels">
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col">
+                <div class="shape-box shadow"></div>
+            </div>
+            <div class="col">
+                <div class="sidepanel shadow ml-5">
+                    <div class="container">
+                        <div class="input-group my-3">
+                            <div class="input-group-prepend detail">
+                                <input class="form-control" type="text" placeholder="Shape" readonly>
+                            </div>
+                            <input type="text" class="form-control" id="shape-calc" placeholder="" readonly>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend detail">
+                                <input class="form-control" type="text" placeholder="Height" readonly>
+                            </div>
+                            <input type="text" class="form-control" id="height-calc" placeholder="" readonly>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend detail">
+                                <input class="form-control" type="text" placeholder="Width" readonly>
+                            </div>
+                            <input type="text" class="form-control" id="width-calc" placeholder="" readonly>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend detail">
+                                <input class="form-control" type="text" placeholder="Area" readonly>
+                            </div>
+                            <input type="text" class="form-control" id="area-calc" placeholder="" readonly>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend detail">
+                                <input class="form-control" type="text" placeholder="Perimeter" readonly>
+                            </div>
+                            <input type="text" class="form-control" id="perimeter-calc" placeholder="" readonly>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend detail">
+                                <input class="form-control" type="text" placeholder="Radius" readonly>
+                            </div>
+                            <input type="text" class="form-control" id="radius-calc" placeholder="" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
