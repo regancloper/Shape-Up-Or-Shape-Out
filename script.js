@@ -27,7 +27,7 @@ class Circle extends Shape {
     constructor(radius) {
         super(2 * radius, 2 * radius);
         this.div.addClass("circle");
-        this.div.css({"height": this.height + "px", "width": this.width +"px"});
+        this.div.css({"height": this.height + "px", "width": this.width + "px"});
     }
     get area() {
         let radius = this.width / 2;
